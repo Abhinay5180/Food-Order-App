@@ -24,7 +24,7 @@ setIsCheckout(true);
 };
 
 const submitOrderHandler = (userData)=>{
-fetch('https://http-course-73e02-default-rtdb.firebaseio.com/meals.json',{
+fetch('https://fooddata-6d9ee-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json',{
     method:'POST',
     body: JSON.stringify({
        user: userData,
