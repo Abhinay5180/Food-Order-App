@@ -10,7 +10,7 @@ const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch('https://http-course-73e02-default-rtdb.firebaseio.com/meals.json');
+      const response = await fetch('https://fooddata-6d9ee-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json');
       const responseData = await response.json();
       const loadedMeals = [];
        
